@@ -5,18 +5,81 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TestOPCUA"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow"
+        Height="450"
+        Width="800">
     <Grid>
         <StackPanel>
             <Button Height="50" 
                     Content="Connect"
                     Click="Button_Click"/>
-            <Button Height="50"
+            <!--<Button Height="50"
                     Content="Read" 
                     Click="Button_Click_1"/>
             <Button Height="50"
                     Content="Write" 
-                    Click="Button_Click_2"/>
+                    Click="Button_Click_2"/>-->
+            <StackPanel HorizontalAlignment="Center"   VerticalAlignment="Center" >
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock  x:Name="textBlock"
+                                Text="Series 1: "
+                                FontSize="24"
+                                HorizontalAlignment="Center"
+                                Margin="10" />
+                    <TextBox     x:Name="Series1TXT"
+                                 Width="500"
+                                 FontSize="24"
+                                 HorizontalAlignment="Center"
+                                 Margin="10" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock  Text="Series 2: "
+                                FontSize="24"
+                                HorizontalAlignment="Center"
+                                Margin="10" />
+                    <TextBox     x:Name="Series2TXT"
+                                 Width="500"
+                                 FontSize="24"
+                                 HorizontalAlignment="Center"
+                                 Margin="10" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Series 3: "
+                               FontSize="24"
+                               HorizontalAlignment="Center"
+                               Margin="10" />
+                    <TextBox     x:Name="Series3TXT"
+                                 Width="500"
+                                 FontSize="24"
+                                 HorizontalAlignment="Center"
+                                 Margin="10" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Series 4: "
+                               FontSize="24"
+                               HorizontalAlignment="Center"
+                               Margin="10" />
+                    <TextBox     x:Name="Series4TXT"
+                                 Width="500"
+                                 FontSize="24"
+                                 HorizontalAlignment="Center"
+                                 Margin="10" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Series 5: "
+                               FontSize="24"
+                               HorizontalAlignment="Center"
+                               Margin="10" />
+                    <TextBox     x:Name="Series5TXT"
+                                 Width="500"
+                                 FontSize="24"
+                                 HorizontalAlignment="Center"
+                                 Margin="10" />
+                </StackPanel>
+                <Button Click="Button_Click_4" Content="WriteAll"/>
+            </StackPanel>
+
+
         </StackPanel>
     </Grid>
 </Window>
