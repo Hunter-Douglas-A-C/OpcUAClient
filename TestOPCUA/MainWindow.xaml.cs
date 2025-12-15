@@ -199,11 +199,12 @@ namespace TestOPCUA
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            opcSession.WriteNodeValue(Series1, Series1TXT.Text);
-            opcSession.WriteNodeValue(Series2, Series2TXT.Text);
-            opcSession.WriteNodeValue(Series3, Series3TXT.Text);
-            opcSession.WriteNodeValue(Series4, Series4TXT.Text);
-            opcSession.WriteNodeValue(Series5, Series5TXT.Text);
+            opcSession.WriteNodeValue(Series1, string.IsNullOrWhiteSpace(Series1TXT.Text) ? "" : Series1TXT.Text);
+            opcSession.WriteNodeValue(Series2, string.IsNullOrWhiteSpace(Series2TXT.Text) ? "" : Series2TXT.Text);
+            opcSession.WriteNodeValue(Series3, string.IsNullOrWhiteSpace(Series3TXT.Text) ? "" : Series3TXT.Text);
+            opcSession.WriteNodeValue(Series4, string.IsNullOrWhiteSpace(Series4TXT.Text) ? "" : Series4TXT.Text);
+            opcSession.WriteNodeValue(Series5, string.IsNullOrWhiteSpace(Series5TXT.Text) ? "" : Series5TXT.Text);
+
         }
     }
 }
